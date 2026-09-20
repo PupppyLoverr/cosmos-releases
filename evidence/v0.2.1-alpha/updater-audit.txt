@@ -1,0 +1,8 @@
+== updater audit: upstream release surfaces ==
+ok: only comments mention the upstream channel
+== updater audit: fail-closed gate ==
+ok: zeron_update::updates_enabled() is hard-wired to false
+ok: crates/engine/src/lib.rs gates on zeron_update::updates_enabled()
+ok: crates/ui/src/shell.rs gates on zeron_update::updates_enabled()
+ok: apps/zeron/src/update_cli.rs gates on zeron_update::ensure_updates_enabled()
+PASS: no user-facing updater path can reach zeron.sh or zeronsh/zeron

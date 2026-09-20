@@ -1,0 +1,12 @@
+Use ONLY the cosmos-computer MCP tools (computer_*) for every GUI action. Do not use shell commands, AppleScript, or any other tool to touch the GUI or the file system, except a single final `cat` of the saved file to verify its contents.
+
+Task on macOS:
+1. Launch TextEdit with computer_launch_app (a new Untitled document opens).
+2. Observe the window (computer_observe, format digest) and type exactly these two lines into the document's text area with computer_type_text:
+Cosmos sheet fallback line 1
+Cosmos sheet fallback line 2
+3. Invoke the File > Save menu with computer_invoke_menu on the TextEdit window.
+4. Re-observe the same TextEdit window. The Save sheet's file-name text field (initially "Untitled.txt") appears in that window's digest. Use computer_set_value on that field with the FULL path value "/Users/devin/artifacts_raw/sheetfallback.txt" — Cosmos handles the folder navigation for you. Do not type the path with computer_type_text.
+5. Re-observe, find the Save button in the sheet, and click it with computer_click. If a "replace existing file" dialog appears, choose Replace.
+6. Wait for the sheet to disappear (computer_observe again), then verify with `cat /Users/devin/artifacts_raw/sheetfallback.txt` and report PASS or FAIL with the file contents.
+If any element token is stale, re-observe and retry once instead of guessing coordinates.

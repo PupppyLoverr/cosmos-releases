@@ -1,0 +1,6 @@
+Cosmos sheet fallback line 1
+Cosmos sheet fallback line 2
+--- wc -c ---
+      57
+--- shasum -a 256 ---
+46f49ebb0ab2cba4b40cfc50126fa45dd78280411cced938a4fc49e52ca22b1b  /Users/devin/artifacts_raw/sheetfallback.txt
