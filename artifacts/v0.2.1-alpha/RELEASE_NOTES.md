@@ -1,13 +1,13 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ c62c5b4d86ade23328208b5308c3cca0f383b1b0 (tag `v0.2.1-alpha`)
+Source: https://github.com/PupppyLoverr/cosmos @ 227b3de70b411f78c14868fa8a59e70c1a26feb0 (tag `v0.2.1-alpha`)
 
 ## Assets
 
 | File | SHA-256 |
 | --- | --- |
-| `cosmos-0.2.79-macos-arm64.dmg` | `07d15fe61984cd68ad1820225feec482705bfd3a34b5a585cf7c511c702e2139` |
-| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `24c8aebe488d46677f358ce39c1512d96bd740b69ed7b97f4dc27f1212e028f5` |
+| `cosmos-0.2.79-macos-arm64.dmg` | `ff9ac0bda2a2c6ea55dfdb6c34a55a66f99d5c7e36a7ba6161d79432d44dee38` |
+| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `c2efa11a4721736604f34c5252adf7658950b2dc8abae408a04a67898cbe134a` |
 
 ## Highlights
 
@@ -16,6 +16,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ c62c5b4d86ade23328208b5308c3cca
 - Computer Use: real open-source Cua driver (0.28.2) behind the Cosmos computer service, native macOS Accessibility menu dispatch, driver liveness/respawn, sheet retargeting.
 - Expo companion app (iOS + Android) with sessions, live watch, remote Computer Use start/stop, pairing and harness marks.
 - Linux Computer Use 2.0 X11 fast path ported from PR #6.
+- Save panels accept absolute paths (Go to Folder + basename); mobile pair/new-session sheets render on iOS 27; Trust & link label readable in dark mode (PR #8).
 
 ## Install (macOS, Apple silicon)
 
