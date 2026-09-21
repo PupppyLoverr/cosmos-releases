@@ -1,13 +1,16 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ 7bca97cc (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at f7836d9e, 4964024f and 227b3de7.
+Source: https://github.com/PupppyLoverr/cosmos @ 1f3b8c02 (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at 7bca97cc, f7836d9e, 4964024f and 227b3de7.
 
 ## Assets
 
 | File | SHA-256 |
 | --- | --- |
-| `cosmos-0.2.79-macos-arm64.dmg` | `0cff8a46687f08375dc875b431c158cd103bf06335e86e9353261fa580f671d4` |
-| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `57637d773db8b342cfa7a9c63111eeb30aa6a154ed7505a5360a2cf5e8e857fe` |
+| `cosmos-0.2.79-macos-arm64.dmg` | `64167e84b0248a1d4bbd6643715470c02ec2504367c74b785dd5d81bb4291725` |
+| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `d0f66c39563e4385ad1fc5f94850b9c1c7f1e2c304b374c506385cde522f924f` |
+
+The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
 ## Highlights
 
@@ -20,6 +23,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ 7bca97cc (branch `devin/1789949
 - First-run chooser: "Use locally" (no account, LAN phone pairing) or "Log in" (Woozlit → synced workspace) — one-time card, device-local (PR #12).
 - Mobile de-slop: title-only Sessions rows, neutral harness marks, empty New Session composer canvas, real desktop names everywhere (PR #12).
 - WAN phone pairing (PR #13): Settings → Devices "Pair phone" shows a single-use QR + 6-char code (5-min TTL) bound to the signed-in account + deviceId; the phone scans/types it under the same Woozlit login and reaches the desktop over `edge.zeron.sh` from cellular/another city — sessions, steer/stop, Watch Live. Per-phone Revoke on the desktop. Same-network pairing stays as an advanced fallback.
+- Mobile visual redesign (PR #13): the iOS app now renders the desktop's actual Solar Linear icon set — 127 SVG assets shared verbatim from `crates/ui/assets/icons/` via a generated `solar-icons.ts` (Solar Icons CC BY 4.0), plus 20 new glyphs drawn in that style and embedded in the desktop too. Neutral ink-on-fill icon tiles (no candy tints), hairline-border composer plate, pixel-asterisk Cosmos mark, "desktop"/"This Desktop" copy (Windows/macOS/Linux neutral).
 
 ## Install (macOS, Apple silicon)
 
