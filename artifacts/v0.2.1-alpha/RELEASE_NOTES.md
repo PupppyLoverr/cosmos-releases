@@ -1,6 +1,6 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ 1b3cb8ec (main; includes PRs #8–#14 — the mobile IPA carries the PR #14 auth fix; the macOS artifacts are unchanged from the 1f3b8c02 build). Rebuilt 2026-09-20; supersedes the earlier builds at 7bca97cc, f7836d9e, 4964024f and 227b3de7. The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged). Rebuilt again 2026-09-20 from main @ 1b3cb8ec (PR #14): fixes real-device pairing 'signed out' — the Woozlit session now persists its access token so relay dials, account device listing and QR/code pairing all authenticate.
+Source: https://github.com/PupppyLoverr/cosmos @ 1b3cb8ec (main; includes PRs #8–#14 — the mobile IPA carries the PR #14 auth fix; the macOS artifacts are unchanged from the 1f3b8c02 build). Rebuilt 2026-09-20; supersedes the earlier builds at 7bca97cc, f7836d9e, 4964024f and 227b3de7. The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged). Rebuilt again 2026-09-20 from main @ e858d67f (PRs #14+#15): PR #14 fixes real-device pairing 'signed out' — the Woozlit session now persists its access token so relay dials, account device listing and QR/code pairing all authenticate. PR #15 bounds every edge fetch (15s) and fails fast with a real message when the desktop isn't checked into the relay, instead of an indefinite spinner. Desktop 'Show code' is now gated on sign-in.
 
 ## Assets
 
@@ -8,7 +8,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ 1b3cb8ec (main; includes PRs #8
 | --- | --- |
 | `cosmos-0.2.79-macos-arm64.dmg` | `64167e84b0248a1d4bbd6643715470c02ec2504367c74b785dd5d81bb4291725` |
 | `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
-| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `b4b774bb5942fcc38e621944134acdeeb8c2d7b6e38475dea06a3e8b27e82441` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `ecd56c56d2c47e92a5e60328464fe47d8b63df8f0dd34d150340c596194d5fe7` |
 
 The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
