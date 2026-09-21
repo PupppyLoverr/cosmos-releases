@@ -1,6 +1,6 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ 1f3b8c02 (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at 7bca97cc, f7836d9e, 4964024f and 227b3de7.
+Source: https://github.com/PupppyLoverr/cosmos @ 1f3b8c02 (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at 7bca97cc, f7836d9e, 4964024f and 227b3de7. The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged).
 
 ## Assets
 
@@ -8,7 +8,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ 1f3b8c02 (branch `devin/1789949
 | --- | --- |
 | `cosmos-0.2.79-macos-arm64.dmg` | `64167e84b0248a1d4bbd6643715470c02ec2504367c74b785dd5d81bb4291725` |
 | `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
-| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `d0f66c39563e4385ad1fc5f94850b9c1c7f1e2c304b374c506385cde522f924f` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `b0b9ce6c809ef3efa9f0dbf030321c99a77a49163ab3d7d46208f4d72e04823a` |
 
 The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
