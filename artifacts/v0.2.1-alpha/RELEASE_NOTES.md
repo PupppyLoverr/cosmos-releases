@@ -1,13 +1,13 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ f7836d9e (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at 4964024f and 227b3de7.
+Source: https://github.com/PupppyLoverr/cosmos @ 7bca97cc (branch `devin/1789949808-wan-pairing`, PR #13 — includes PRs #8/#10/#11/#12). Rebuilt 2026-09-20; supersedes the earlier builds at f7836d9e, 4964024f and 227b3de7.
 
 ## Assets
 
 | File | SHA-256 |
 | --- | --- |
-| `cosmos-0.2.79-macos-arm64.dmg` | `47bd547467769199bb90021da64f1ea7f134e80d38a4fae261fec1145b12b67e` |
-| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `e0beb4546521ccc2b9b637ec436ea2049e07053de6f373369ed53f79a4ead05b` |
+| `cosmos-0.2.79-macos-arm64.dmg` | `0cff8a46687f08375dc875b431c158cd103bf06335e86e9353261fa580f671d4` |
+| `cosmos-0.2.79-macos-arm64-app.tar.gz` | `57637d773db8b342cfa7a9c63111eeb30aa6a154ed7505a5360a2cf5e8e857fe` |
 
 ## Highlights
 
