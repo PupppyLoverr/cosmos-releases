@@ -1,6 +1,6 @@
 # Cosmos v0.2.1-alpha (macOS)
 
-Source: https://github.com/PupppyLoverr/cosmos @ bf358de5 (main; includes PRs #8–#16 plus the edge migration — both apps now default to the Cosmos-owned relay `cosmos-edge.cosmos-edge.workers.dev`, which runs Woozlit auth: `/health` → `{"ok":true,"auth":"woozlit"}`. Upstream `edge.zeron.sh` still runs the WorkOS-only build and 401s every Woozlit token — pairing could never complete against it). Rebuilt 2026-09-21; supersedes all earlier builds (7bca97cc through 1b3cb8ec — none of them reach a working edge). The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged). Rebuilt again 2026-09-20 from main @ e858d67f (PRs #14+#15): PR #14 fixes real-device pairing 'signed out' — the Woozlit session now persists its access token so relay dials, account device listing and QR/code pairing all authenticate. PR #15 bounds every edge fetch (15s) and fails fast with a real message when the desktop isn't checked into the relay, instead of an indefinite spinner. Desktop 'Show code' is now gated on sign-in.
+Source: https://github.com/PupppyLoverr/cosmos @ 9fa5da85 (main; includes PRs #8–#16 plus the edge migration — both apps now default to the Cosmos-owned relay `cosmos-edge.cosmos-edge.workers.dev`, which runs Woozlit auth: `/health` → `{"ok":true,"auth":"woozlit"}`. Upstream `edge.zeron.sh` still runs the WorkOS-only build and 401s every Woozlit token — pairing could never complete against it). Rebuilt 2026-09-21; supersedes all earlier builds (7bca97cc through 1b3cb8ec — none of them reach a working edge). The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged). Rebuilt again 2026-09-20 from main @ e858d67f (PRs #14+#15): PR #14 fixes real-device pairing 'signed out' — the Woozlit session now persists its access token so relay dials, account device listing and QR/code pairing all authenticate. PR #15 bounds every edge fetch (15s) and fails fast with a real message when the desktop isn't checked into the relay, instead of an indefinite spinner. Desktop 'Show code' is now gated on sign-in.
 
 ## Assets
 
@@ -8,7 +8,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ bf358de5 (main; includes PRs #8
 | --- | --- |
 | `cosmos-0.2.79-macos-arm64.dmg` | `0417591ac7378b418cd65b5cd5d5f7169bc0f0fb443bb556c640f8402b88242b` |
 | `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
-| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `3175ac847710f95827c05a5cee283b85ccc7a226b20514e4f84a51cb4840f0f5` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `cb192ace121e0456728cf30372a9619e0597e62385fff3a69aa249ec624fc2cf` |
 
 The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
@@ -32,6 +32,7 @@ The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this buil
 - Deployed end-to-end verified: `pairing_edge_live` (the real Rust engine + real device-room flow) ran green against production workerd — owner gate, code redeem→grant, second-conn authorize, gated surface, `host_closed` broadcast.
 - R2 buckets are not yet bound: R2 enablement is a one-time dashboard toggle on the Cloudflare account (free tier), then re-run `wrangler r2 bucket create cosmos-edge-blobs` / `cosmos-edge-releases` + `wrangler deploy -c wrangler.cosmos.jsonc`. Pairing and remote control never touch R2 — it only serves blob offload, nightly backups, and edge-hosted release assets.
 - Windows installer: not buildable on this macOS VM — run `scripts/package-windows.ps1` on Windows; the pairing path is platform-neutral and needs no port forwarding.
+- IPA rebuilt @ `9fa5da85` — UI/UX overhaul: markdown transcript (inline code, code blocks, quotes, lists, tables, links), tool-group accent edge + Running/Done status pills, mono command paths, full onboarding rewrite (aurora backdrop, staggered entrances, stage transitions, spring-press CTAs), and the "Show the welcome again" settings row now replays onboarding instantly. Remote-control internals unchanged; also pins `react-native-gesture-handler@3.3.0` (previously transitive — got pruned from node_modules).
 - IPA rebuilt @ `bf358de5` with the sign-in token fix: the Woozlit callback's *custom* token is a JWT and was wrongly stored as the relay bearer (the desktop engine always exchanges it; the phone now does too) — that mismatch is what produced the "relay rejected this sign-in" 401 on-device. **Required once on the phone: Settings → Sign Out → sign back in** so the session stores the real Firebase id token + refresh token.
 
 ## Install (macOS, Apple silicon)
