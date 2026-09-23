@@ -45,3 +45,4 @@ Windows and Linux builds for this tag are produced by the release workflow in `P
 
 - Rebuild @ 77cb30e4 — session transcript fix (FlatList), PR #24
 - Rebuild @ afc3d072 — drawer nav / custom chrome / floating composer
+- Fix blank Pair sheet, main d13c70df
