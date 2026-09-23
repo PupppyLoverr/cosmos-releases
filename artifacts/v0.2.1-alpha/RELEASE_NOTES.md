@@ -42,3 +42,5 @@ Open the DMG and drag `Cosmos.app` to Applications. The bundle is signed with a 
 Accessibility for Computer Use must be enabled once per Mac in System Settings → Privacy & Security → Accessibility.
 
 Windows and Linux builds for this tag are produced by the release workflow in `PupppyLoverr/cosmos` and are not included here.
+
+- Rebuild @ 77cb30e4 — session transcript fix (FlatList), PR #24
