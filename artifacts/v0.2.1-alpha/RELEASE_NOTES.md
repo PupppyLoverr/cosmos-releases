@@ -44,3 +44,4 @@ Accessibility for Computer Use must be enabled once per Mac in System Settings �
 Windows and Linux builds for this tag are produced by the release workflow in `PupppyLoverr/cosmos` and are not included here.
 
 - Rebuild @ 77cb30e4 — session transcript fix (FlatList), PR #24
+- Rebuild @ afc3d072 — drawer nav / custom chrome / floating composer
