@@ -8,7 +8,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ 9fa5da85 (main; includes PRs #8
 | --- | --- |
 | `cosmos-0.2.79-macos-arm64.dmg` | `0417591ac7378b418cd65b5cd5d5f7169bc0f0fb443bb556c640f8402b88242b` |
 | `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
-| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `cb192ace121e0456728cf30372a9619e0597e62385fff3a69aa249ec624fc2cf` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `ad80fc333479dd0e4c43b93899827c041e155efdbc995d43edb69b5e66881a5a` |
 
 The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
@@ -47,3 +47,11 @@ Windows and Linux builds for this tag are produced by the release workflow in `P
 - Rebuild @ afc3d072 — drawer nav / custom chrome / floating composer
 - Fix blank Pair sheet, main d13c70df
 - Rebuild @ 7eaf25e5 — Live Activity + Home-list fix
+
+### iOS build from cosmos `08db4953`
+
+- Stays paired through desktop sleep / lid close / restart: the phone shows "asleep or closed" and reconnects on its own when the desktop returns (LAN and relay).
+- Pairing grants expire six months after pairing; the phone then asks to pair again.
+- Faster Home and transcript lists; stale-safe transcript streams.
+- Includes selected upstream Zeron fixes (#508, #524, #548) on the desktop side.
+- Live Activity extension, Cosmos icon and `cosmos-edge.cosmos-edge.workers.dev` relay verified in the bundle; no `edge.zeron.sh`.
