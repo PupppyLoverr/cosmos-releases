@@ -1,0 +1,345 @@
+warning: field `window_id` is never read
+  --> /Users/devin/repos/cosmos/crates/computer/src/cua.rs:57:5
+   |
+55 | struct CachedElement {
+   |        ------------- field in this struct
+56 |     pid: i64,
+57 |     window_id: i64,
+   |     ^^^^^^^^^
+   |
+   = note: `CachedElement` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+TextEdit pid=78480 wid=296 local=(328,274.3) bounds={"app_name":"TextEdit","bounds":{"height":422.0,"width":656.0,"x":165.0,"y":86.0},"current_space_id":1,"is_on_screen":true,"layer":0,"on_current_space":true,"pid":78480,"space_ids":[1],"title":"fx-note.txt","window_id":296,"z_index":13}
+other=Some((13797, 202, "System Settings"))
+[2m2026-09-27T06:30:06.649534Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"click" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:08.351869Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"click" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m1712.0815
+fast_click[0] 1712.193 ✅ Sent screen-absolute click at desktop-pixel (493,360) → screen-point (493,360) (desktop scope; not driver-verified). [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:08.361646Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"click" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:08.596073Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"click" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m244.10995799999998
+fast_click[1] 244.198 ✅ Sent screen-absolute click at desktop-pixel (493,360) → screen-point (493,360) (desktop scope; not driver-verified). [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:08.600535Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"click" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:08.852129Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"click" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m255.9475
+fast_click[2] 256.062 ✅ Sent screen-absolute click at desktop-pixel (493,360) → screen-point (493,360) (desktop scope; not driver-verified). [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:08.861777Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"click" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.092194Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"click" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m239.949167
+fast_click[3] 240.052 ✅ Sent screen-absolute click at desktop-pixel (493,360) → screen-point (493,360) (desktop scope; not driver-verified). [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.099298Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"click" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.348217Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"click" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m255.91124999999997
+fast_click[4] 255.999 ✅ Sent screen-absolute click at desktop-pixel (493,360) → screen-point (493,360) (desktop scope; not driver-verified). [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.359515Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"type_text" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.456027Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m107.715083
+fast_type[0] 107.830 Typed text into the frontmost desktop application. [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.464314Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"type_text" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.553133Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m96.902583
+fast_type[1] 97.042 Typed text into the frontmost desktop application. [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.570958Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"type_text" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.662353Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m109.110292
+fast_type[2] 109.223 Typed text into the frontmost desktop application. [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.674443Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"type_text" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.767410Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m104.92245899999999
+fast_type[3] 105.024 Typed text into the frontmost desktop application. [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+[2m2026-09-27T06:30:09.776373Z[0m [34mDEBUG[0m using fast desktop-scoped input route [3mtool[0m[2m=[0m"type_text" [3mpid[0m[2m=[0m78480 [3mwindow_id[0m[2m=[0m296
+[2m2026-09-27T06:30:09.867303Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"fast-desktop" [3melapsed_ms[0m[2m=[0m99.79375
+fast_type[4] 99.878 Typed text into the frontmost desktop application. [effect:unverifiable route:global_input delivery:not_applicable] — verify the outcome before continuing
+{
+  "delivery": {
+    "mode": "not_applicable"
+  },
+  "effect": "unverifiable",
+  "route": "global_input"
+}
+after_fast_observe={
+  "appName": "TextEdit",
+  "bundleId": null,
+  "modality": "semantic",
+  "pid": 78480,
+  "scope": "window",
+  "truncated": false,
+  "windowId": 296,
+  "windowTitle": "fx-note.txt"
+}
+window "fx-note.txt" — TextEdit (pid 78480, hwnd 296, snapshot s0000003d)
+252 elements (140 shown, 112 more via computer_find)
+refs: E{n} = elementIndex for this snapshot — pass snapshotId+windowId, or elementToken "s0000003d:{n}"; stale after any UI change
+E0 AXWindow "fx-note.txt" act:AXRaise @165,86 656x422
+  E1 AXTextArea "USD/AUD rate: 1 USD = 1.42 AUD (XE mid-market rate: 1.4231) Source: XE …" = "USD/AUD rate: 1 USD = 1.42 AUD (XE mid-market rate: 1.4231) Source: XE (xe.com) via Google Sear…" act:AXShowMenu @165,118 656x384
+  E2 AXButton act:AXPress @173,94 16x16
+  E3 AXButton act:AXPress,AXZoomWindow,AXShowMenu @219,94 16x16
+  E4 AXButton act:AXPress @196,94 16x16
+E5 AXMenuBar "_NS:833" act:AXCancel @0,0 1600x30
+  E6 AXMenuBarItem "Apple" act:AXCancel,AXPress,AXPick @10,0 34x30
+    E7 AXMenu act:AXCancel
+      E8 AXMenuItem "About This Mac" act:AXCancel,AXPress,AXPick
+      E9 AXMenuItem "System Information" act:AXCancel,AXPress,AXPick
+      E10 AXMenuItem "System Settings…" act:AXCancel,AXPress,AXPick
+      E11 AXMenuItem "App Store" act:AXCancel,AXPress,AXPick
+      E12 AXMenuItem "Recent Items" act:AXCancel,AXPress,AXPick
+        E13 AXMenu act:AXCancel
+          E14 AXMenuItem "Calculator" act:AXCancel,AXPress,AXPick
+          E15 AXMenuItem "Show “Calculator” in Finder" act:AXCancel,AXPress,AXPick
+          E16 AXMenuItem "Calendar" act:AXCancel,AXPress,AXPick
+          E17 AXMenuItem "Show “Calendar” in Finder" act:AXCancel,AXPress,AXPick
+          E18 AXMenuItem "Cosmos" act:AXCancel,AXPress,AXPick
+          E19 AXMenuItem "Show “Cosmos” in Finder" act:AXCancel,AXPress,AXPick
+          E20 AXMenuItem "Google Chrome" act:AXCancel,AXPress,AXPick
+          E21 AXMenuItem "Show “Google Chrome” in Finder" act:AXCancel,AXPress,AXPick
+          E22 AXMenuItem "Safari" act:AXCancel,AXPress,AXPick
+          E23 AXMenuItem "Show “Safari” in Finder" act:AXCancel,AXPress,AXPick
+          E24 AXMenuItem "Simulator" act:AXCancel,AXPress,AXPick
+          E25 AXMenuItem "Show “Simulator” in Finder" act:AXCancel,AXPress,AXPick
+          E26 AXMenuItem "System Settings" act:AXCancel,AXPress,AXPick
+          E27 AXMenuItem "Show “System Settings” in Finder" act:AXCancel,AXPress,AXPick
+          E28 AXMenuItem "Terminal" act:AXCancel,AXPress,AXPick
+          E29 AXMenuItem "Show “Terminal” in Finder" act:AXCancel,AXPress,AXPick
+          E30 AXMenuItem "TextEdit" act:AXCancel,AXPress,AXPick
+          E31 AXMenuItem "Show “TextEdit” in Finder" act:AXCancel,AXPress,AXPick
+          E32 AXMenuItem "fx-note.txt" act:AXCancel,AXPress,AXPick
+          E33 AXMenuItem "Show “fx-note.txt” in Finder" act:AXCancel,AXPress,AXPick
+          E34 AXMenuItem "Macintosh HD" act:AXCancel,AXPress,AXPick
+          E35 AXMenuItem "Clear Menu" act:AXCancel,AXPress,AXPick
+      E36 AXMenuItem "Force Quit…" act:AXCancel,AXPress,AXPick
+      E37 AXMenuItem "Force Quit TextEdit" act:AXCancel,AXPress,AXPick
+      E38 AXMenuItem "Sleep" act:AXCancel,AXPress,AXPick
+      E39 AXMenuItem "Restart…" act:AXCancel,AXPress,AXPick
+      E40 AXMenuItem "Restart" act:AXCancel,AXPress,AXPick
+      E41 AXMenuItem "Shut Down…" act:AXCancel,AXPress,AXPick
+      E42 AXMenuItem "Shut Down" act:AXCancel,AXPress,AXPick
+      E43 AXMenuItem "Lock Screen" act:AXCancel,AXPress,AXPick
+      E44 AXMenuItem "Log Out devin…" act:AXCancel,AXPress,AXPick
+      E45 AXMenuItem "Log Out devin" act:AXCancel,AXPress,AXPick
+  E46 AXMenuBarItem "TextEdit" act:AXCancel,AXPress,AXPick @44,0 73x30
+    E47 AXMenu "_NS:842" act:AXCancel
+      E48 AXMenuItem "About TextEdit" act:AXCancel,AXPress,AXPick
+      E49 AXMenuItem "Settings…" act:AXCancel,AXPress,AXPick
+      E50 AXMenuItem "Services" act:AXCancel,AXPress,AXPick
+        E51 AXMenu "_NS:852" act:AXCancel
+          E52 AXMenuItem "Activity Monitor" act:AXCancel,AXPress,AXPick
+          E53 AXMenuItem "Allocations & Leaks" act:AXCancel,AXPress,AXPick
+          E54 AXMenuItem "File Activity" act:AXCancel,AXPress,AXPick
+          E55 AXMenuItem "System Trace" act:AXCancel,AXPress,AXPick
+          E56 AXMenuItem "Services Settings…" act:AXCancel,AXPress,AXPick
+      E57 AXMenuItem "Hide TextEdit" act:AXCancel,AXPress,AXPick
+      E58 AXMenuItem "Hide Others" act:AXCancel,AXPress,AXPick
+      E59 AXMenuItem "Quit TextEdit" act:AXCancel,AXPress,AXPick
+      E60 AXMenuItem "Quit and Keep Windows" act:AXCancel,AXPress,AXPick
+  E61 AXMenuBarItem "File" act:AXCancel,AXPress,AXPick @117,0 42x30
+    E62 AXMenu "_NS:864" act:AXCancel
+      E63 AXMenuItem "New" act:AXCancel,AXPress,AXPick
+      E64 AXMenuItem "Open…" act:AXCancel,AXPress,AXPick
+      E65 AXMenuItem "Open Recent" act:AXCancel,AXPress,AXPick
+        E66 AXMenu "_NS:872" act:AXCancel
+          E67 AXMenuItem "fx-note.txt" act:AXCancel,AXPress,AXPick
+          E68 AXMenuItem "Clear Menu" act:AXCancel,AXPress,AXPick
+      E69 AXMenuItem "Close" act:AXCancel,AXPress,AXPick
+      E70 AXMenuItem "Close All" act:AXCancel,AXPress,AXPick
+      E71 AXMenuItem "Save" act:AXCancel,AXPress,AXPick
+      E72 AXMenuItem "Save As…" act:AXCancel,AXPress,AXPick
+      E73 AXMenuItem "Duplicate" act:AXCancel,AXPress,AXPick
+      E74 AXMenuItem "Rename…" act:AXCancel,AXPress,AXPick
+      E75 AXMenuItem "Move To…" act:AXCancel,AXPress,AXPick
+      E76 AXMenuItem "Revert To" act:AXCancel,AXPress,AXPick
+        E77 AXMenu act:AXCancel
+          E78 AXMenuItem "Last Opened — Today, 11:29 PM" act:AXCancel,AXPress,AXPick
+          E79 AXMenuItem "Browse All Versions…" act:AXCancel,AXPress,AXPick
+      E80 AXMenuItem "<<Import From Device - unlocalized>>" act:AXCancel,AXPress,AXPick
+        E81 AXMenu act:AXCancel
+      E82 AXMenuItem "Export as PDF…" act:AXCancel,AXPress,AXPick
+      E83 AXMenuItem "Share" act:AXCancel,AXPress,AXPick
+        E84 AXMenu act:AXCancel
+          E85 AXMenuItem "AirDrop" act:AXCancel,AXPress,AXPick
+          E86 AXMenuItem "Mail" act:AXCancel,AXPress,AXPick
+          E87 AXMenuItem "Messages" act:AXCancel,AXPress,AXPick
+          E88 AXMenuItem "Notes" act:AXCancel,AXPress,AXPick
+          E89 AXMenuItem "Freeform" act:AXCancel,AXPress,AXPick
+          E90 AXMenuItem "Simulator" act:AXCancel,AXPress,AXPick
+          E91 AXMenuItem "Journal" act:AXCancel,AXPress,AXPick
+          E92 AXMenuItem "Reminders" act:AXCancel,AXPress,AXPick
+          E93 AXMenuItem "More…" act:AXCancel,AXPress,AXPick
+      E94 AXMenuItem "Show Properties" act:AXCancel,AXPress,AXPick
+      E95 AXMenuItem "Page Setup…" act:AXCancel,AXPress,AXPick
+      E96 AXMenuItem "Print…" act:AXCancel,AXPress,AXPick
+  E97 AXMenuBarItem "Edit" act:AXCancel,AXPress,AXPick @159,0 44x30
+    E98 AXMenu "_NS:889" act:AXCancel
+      E99 AXMenuItem "Undo Typing" act:AXCancel,AXPress,AXPick
+      E100 AXMenuItem "Paste" act:AXCancel,AXPress,AXPick
+      E101 AXMenuItem "Paste and Match Style" act:AXCancel,AXPress,AXPick
+      E102 AXMenuItem "Complete" act:AXCancel,AXPress,AXPick
+      E103 AXMenuItem "Select All" act:AXCancel,AXPress,AXPick
+      E104 AXMenuItem "Insert" act:AXCancel,AXPress,AXPick
+        E105 AXMenu "_NS:898" act:AXCancel
+          E106 AXMenuItem "Line Break" act:AXCancel,AXPress,AXPick
+          E107 AXMenuItem "Paragraph Break" act:AXCancel,AXPress,AXPick
+          E108 AXMenuItem "Page Break" act:AXCancel,AXPress,AXPick
+      E109 AXMenuItem "Find" act:AXCancel,AXPress,AXPick
+        E110 AXMenu "_NS:907" act:AXCancel
+          E111 AXMenuItem "Find…" act:AXCancel,AXPress,AXPick
+          E112 AXMenuItem "Find and Replace…" act:AXCancel,AXPress,AXPick
+          E113 AXMenuItem "Find Next" act:AXCancel,AXPress,AXPick
+          E114 AXMenuItem "Find Previous" act:AXCancel,AXPress,AXPick
+          E115 AXMenuItem "Jump to Selection" act:AXCancel,AXPress,AXPick
+          E116 AXMenuItem "Select Line..." act:AXCancel,AXPress,AXPick
+      E117 AXMenuItem "Spelling and Grammar" act:AXCancel,AXPress,AXPick
+        E118 AXMenu "_NS:915" act:AXCancel
+          E119 AXMenuItem "Show Spelling and Grammar" act:AXCancel,AXPress,AXPick
+          E120 AXMenuItem "Check Document Now" act:AXCancel,AXPress,AXPick
+          E121 AXMenuItem "Check Spelling While Typing" act:AXCancel,AXPress,AXPick
+          E122 AXMenuItem "Check Grammar With Spelling" act:AXCancel,AXPress,AXPick
+          E123 AXMenuItem "Correct Spelling Automatically" act:AXCancel,AXPress,AXPick
+      E124 AXMenuItem "Substitutions" act:AXCancel,AXPress,AXPick
+        E125 AXMenu "_NS:924" act:AXCancel
+          E126 AXMenuItem "Show Substitutions" act:AXCancel,AXPress,AXPick
+          E127 AXMenuItem "Smart Copy/Paste" act:AXCancel,AXPress,AXPick
+          E128 AXMenuItem "Smart Quotes" act:AXCancel,AXPress,AXPick
+          E129 AXMenuItem "Smart Dashes" act:AXCancel,AXPress,AXPick
+          E130 AXMenuItem "Smart Links" act:AXCancel,AXPress,AXPick
+          E131 AXMenuItem "Data Detectors" act:AXCancel,AXPress,AXPick
+          E132 AXMenuItem "Text Replacement" act:AXCancel,AXPress,AXPick
+      E133 AXMenuItem "Transformations" act:AXCancel,AXPress,AXPick
+        E134 AXMenu "_NS:933" act:AXCancel
+          E135 AXMenuItem "Make Upper Case" act:AXCancel,AXPress,AXPick
+          E136 AXMenuItem "Make Lower Case" act:AXCancel,AXPress,AXPick
+          E137 AXMenuItem "Capitalize" act:AXCancel,AXPress,AXPick
+      E138 AXMenuItem "Speech" act:AXCancel,AXPress,AXPick
+        E139 AXMenu "_NS:941" act:AXCancel
+… 112 more elements not shown — use computer_find to search the full set
+
+[2m2026-09-27T06:30:12.297123Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"window" [3melapsed_ms[0m[2m=[0m1110.856416
+window_type[0] 1110.998 ✅ Inserted 2 char(s) into AXTextArea "". [effect:confirmed route:accessibility delivery:background]
+{
+  "delivery": {
+    "delivered_count": 2,
+    "mode": "background"
+  },
+  "effect": "confirmed",
+  "evidence": [
+    {
+      "kind": "value_readback"
+    }
+  ],
+  "route": "accessibility"
+}
+[2m2026-09-27T06:30:13.395846Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"window" [3melapsed_ms[0m[2m=[0m1098.6295
+window_type[1] 1098.716 ✅ Inserted 2 char(s) into AXTextArea "". [effect:confirmed route:accessibility delivery:background]
+{
+  "delivery": {
+    "delivered_count": 2,
+    "mode": "background"
+  },
+  "effect": "confirmed",
+  "evidence": [
+    {
+      "kind": "value_readback"
+    }
+  ],
+  "route": "accessibility"
+}
+[2m2026-09-27T06:30:14.495021Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"window" [3melapsed_ms[0m[2m=[0m1099.083917
+window_type[2] 1099.177 ✅ Inserted 2 char(s) into AXTextArea "". [effect:confirmed route:accessibility delivery:background]
+{
+  "delivery": {
+    "delivered_count": 2,
+    "mode": "background"
+  },
+  "effect": "confirmed",
+  "evidence": [
+    {
+      "kind": "value_readback"
+    }
+  ],
+  "route": "accessibility"
+}
+[2m2026-09-27T06:30:15.612200Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"window" [3melapsed_ms[0m[2m=[0m1117.0821660000001
+window_type[3] 1117.179 ✅ Inserted 2 char(s) into AXTextArea "". [effect:confirmed route:accessibility delivery:background]
+{
+  "delivery": {
+    "delivered_count": 2,
+    "mode": "background"
+  },
+  "effect": "confirmed",
+  "evidence": [
+    {
+      "kind": "value_readback"
+    }
+  ],
+  "route": "accessibility"
+}
+[2m2026-09-27T06:30:16.742136Z[0m [34mDEBUG[0m computer action completed [3mtool[0m[2m=[0m"type_text" [3mroute[0m[2m=[0m"window" [3melapsed_ms[0m[2m=[0m1129.831083
+window_type[4] 1129.945 ✅ Inserted 2 char(s) into AXTextArea "". [effect:confirmed route:accessibility delivery:background]
+{
+  "delivery": {
+    "delivered_count": 2,
+    "mode": "background"
+  },
+  "effect": "confirmed",
+  "evidence": [
+    {
+      "kind": "value_readback"
+    }
+  ],
+  "route": "accessibility"
+}
+MEDIAN fast_click=255.999 fast_type=105.024 window_type=1110.998

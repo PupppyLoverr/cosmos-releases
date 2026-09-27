@@ -1,4 +1,37 @@
-# Cosmos v0.2.1-alpha (macOS)
+# Cosmos v0.2.1-alpha refresh — source `3c536cc3`
+
+This refresh is built from Cosmos `main` at `3c536cc3`.
+
+## Mobile Home information architecture
+
+- Home organizes work by device, folder/project, and session.
+- The All view aggregates sessions across linked devices; selecting a device narrows the view to that desktop.
+- Session rows keep the status, harness, and recency metadata compact and tonal, with a docked composer.
+- Release screenshots cover Home All, a single-device Home filter, and a session view on the iPhone 17 simulator.
+
+## Computer Use fast input
+
+When the target app is frontmost, pixel-based click and keyboard actions use a desktop-scoped route; pointer actions retain exact window identity, while keyboard actions accept any frontmost sibling window from the target app. The original window route remains the safe fallback.
+
+- Frontmost click benchmark: approximately **256 ms**
+- Frontmost type benchmark: approximately **105 ms**
+- Window route benchmark: approximately **1.1 s**
+- Recorded live-run medians: approximately **1,754 ms** for the window route versus **1,048 ms** for the fast-desktop route
+
+The daemon benchmark and live-run artifacts are included under `evidence/computer-use-opencode/`.
+
+## OpenCode recorded run
+
+The recorded computer-use run used OpenCode free models, starting with `opencode/nemotron-3.5-lightning-free` and switching to `opencode/big-pickle`. The run searched Safari for an exchange rate, calculated the conversion, created and saved a TextEdit note, and verified the saved file and final desktop state.
+
+Issues found during the run:
+
+- Safari's address-bar suggestions created a same-process popup that initially caused `same_pid_keyboard_ambiguity` for Return; relaunching Safari recovered the task.
+- Some window observations resolved to service-owned window names, so `computer_find` and desktop-scoped captures were used for verification.
+- `type_text` strips control characters; multiline content was pasted through the clipboard path instead.
+- Windows desktop needs a rebuild before this release's desktop behavior is available there.
+
+## Release history
 
 Source: https://github.com/PupppyLoverr/cosmos @ 9fa5da85 (main; includes PRs #8–#16 plus the edge migration — both apps now default to the Cosmos-owned relay `cosmos-edge.cosmos-edge.workers.dev`, which runs Woozlit auth: `/health` → `{"ok":true,"auth":"woozlit"}`. Upstream `edge.zeron.sh` still runs the WorkOS-only build and 401s every Woozlit token — pairing could never complete against it). Rebuilt 2026-09-21; supersedes all earlier builds (7bca97cc through 1b3cb8ec — none of them reach a working edge). The mobile IPA was repacked on 2026-09-20 (Payload/ layout fix — the earlier zip lacked the Payload wrapper and Sideloadly refused it; hash changed, code unchanged). Rebuilt again 2026-09-20 from main @ e858d67f (PRs #14+#15): PR #14 fixes real-device pairing 'signed out' — the Woozlit session now persists its access token so relay dials, account device listing and QR/code pairing all authenticate. PR #15 bounds every edge fetch (15s) and fails fast with a real message when the desktop isn't checked into the relay, instead of an indefinite spinner. Desktop 'Show code' is now gated on sign-in.
 
@@ -8,7 +41,7 @@ Source: https://github.com/PupppyLoverr/cosmos @ 9fa5da85 (main; includes PRs #8
 | --- | --- |
 | `cosmos-0.2.79-macos-arm64.dmg` | `0417591ac7378b418cd65b5cd5d5f7169bc0f0fb443bb556c640f8402b88242b` |
 | `cosmos-0.2.79-macos-arm64-app.tar.gz` | `0634692174f6fd3b7ee5e3814b32b9d8059b3f5917b05eb29f9ae1f681d817f2` |
-| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `ad80fc333479dd0e4c43b93899827c041e155efdbc995d43edb69b5e66881a5a` |
+| `mobile/Cosmos-0.2.79-ios-unsigned.ipa` | `2963097ebf601f7cc1b62737fbdc912c1f239a4778c12abce63253d81481a77b` |
 
 The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this build and was removed; sideload the IPA per `mobile/SIDELOAD.md`.
 
