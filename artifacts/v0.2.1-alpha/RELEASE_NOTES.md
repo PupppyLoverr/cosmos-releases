@@ -47,6 +47,7 @@ Windows and Linux builds for this tag are produced by the release workflow in `P
 - Rebuild @ afc3d072 — drawer nav / custom chrome / floating composer
 - Fix blank Pair sheet, main d13c70df
 - Rebuild @ 7eaf25e5 — Live Activity + Home-list fix
+- Rebuild @ 342e8c63 — Cursor-style minimal iOS reskin; computer-use adaptive polling
 
 ### iOS build from cosmos `08db4953`
 
