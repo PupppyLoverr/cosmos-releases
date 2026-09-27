@@ -1,6 +1,22 @@
-# Cosmos v0.2.1-alpha refresh — source `3c536cc3`
+# Cosmos v0.2.1-alpha refresh — source `1b5c14f0`
 
-This refresh is built from Cosmos `main` at `3c536cc3`.
+This refresh is built from Cosmos `main` at `1b5c14f0`.
+
+## iOS polish pass
+
+- Quieter, denser native iOS chrome with centered session headers, compact Home rows, aligned separators, simplified New Session suggestions, and updated onboarding copy.
+- The final mobile screenshots are staged under `evidence/ios-v3/`, including the v3 and v4 simulator captures.
+
+## Computer-use reliability
+
+- Terminal OpenCode provider errors now settle active turns as terminal errors, including the five-minute silence watchdog when no tool is running.
+- `computer_observe` supports PID/window targeting and CoreGraphics frontmost selection.
+- `launch_app` skips redundant open/readiness work when a visible window is already available.
+
+## CLI portability and conventions
+
+- Shared flag aliases, `--continue`, `--add-dir`, and `--system-prompt` / append-system-prompt behavior across zcli, zdev, and zagy.
+- Full `/cost` reporting, direct `/init` scaffolding, `.mcp.json` discovery, shell-specific completions, and macOS/Linux portability improvements.
 
 ## Mobile Home information architecture
 
