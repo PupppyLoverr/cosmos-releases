@@ -105,3 +105,9 @@ Windows and Linux builds for this tag are produced by the release workflow in `P
 - Faster Home and transcript lists; stale-safe transcript streams.
 - Includes selected upstream Zeron fixes (#508, #524, #548) on the desktop side.
 - Live Activity extension, Cosmos icon and `cosmos-edge.cosmos-edge.workers.dev` relay verified in the bundle; no `edge.zeron.sh`.
+
+## Desktop 0.2.90 (cosmos main 8ae405cc)
+
+- Cloud Computer pane shows the seat's Linux desktop (X display capture) or, on headless Railway/Boat/SSH seats, a live Linux console: OS, CPU/memory/disk and top processes, refreshing every 4s.
+- GitHub connects through the Woozlit GitHub App (device flow) in Settings → Cloud computer; no token field by default.
+- Right-pane picker and pane headers aligned for Agent and Cloud modes.
