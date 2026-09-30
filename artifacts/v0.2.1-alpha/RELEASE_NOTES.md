@@ -1,6 +1,19 @@
-# Cosmos v0.2.1-alpha refresh — source `1b5c14f0`
+# Cosmos v0.2.1-alpha refresh — source `1e732c74`
 
-This refresh is built from Cosmos `main` at `1b5c14f0`.
+This refresh is built from Cosmos `main` at `1e732c74`.
+
+## Cloud mode and GitHub
+
+- Cloud mode uses the shared right-side pane with Linux-aware Computer, Files,
+  Changes, Shell, Progress, Context, Tasks, pull requests, and Side Chat views.
+- The Cosmos GitHub App (`cosmos-ade`) uses Device Flow without a client secret.
+- Cloud mode's repository picker lists the authenticated user's GitHub
+  repositories, supports search and selection, and binds the selected checkout
+  to the cloud seat.
+- Cloud Computer reports the actual Linux/cloud environment instead of
+  presenting a local desktop as the remote machine.
+- The Devices page no longer crashes when opening phone pairing, and its
+  account copy is Cosmos-neutral.
 
 ## iOS polish pass
 
