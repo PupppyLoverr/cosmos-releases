@@ -1,3 +1,14 @@
+# iOS voice composer preview — source `d2d59873` (cosmos PR #31)
+
+| File | SHA-256 |
+| --- | --- |
+| `ios/Cosmos-0.2.91-ios-voice-composer-unsigned.ipa` | `9e582f3fcbb86f1bf8e36dd8b66bf2b6f696610a7b335939c9fd1ec99d7ee80c` |
+
+- Native Cosmos iOS app (`sh.cosmos.ios`, iOS 26+), unsigned — sideload as in `mobile/SIDELOAD.md`.
+- Chat screen: a Changes pill (+/− per file) and a Model pill above the input; switch the harness model mid-task (applies on the next turn).
+- Input bar: plain +, on-device mic dictation, and a voice call mode that listens, sends, and reads the reply aloud with the phone's built-in voice. No paid services.
+- Live microphone dictation and spoken replies were not exercised in testing (the build Mac has no audio input).
+
 # Cosmos 0.2.91 — source `268bbd1b`
 
 Built from Cosmos `main` at `268bbd1b` (PRs #27–#29).
