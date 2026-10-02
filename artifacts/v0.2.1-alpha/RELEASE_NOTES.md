@@ -1,3 +1,17 @@
+# Cosmos 0.2.91 — source `268bbd1b`
+
+Built from Cosmos `main` at `268bbd1b` (PRs #27–#29).
+
+| File | SHA-256 |
+| --- | --- |
+| `cosmos-0.2.91-macos-arm64.dmg` | `4437f64a0e28ebf0457193c06368e68142e3a0d6e18cfd3b902e2d8077a52078` |
+| `ios/Cosmos-0.2.91-ios-unsigned.ipa` | `096b09f2d66072d44c220fc63eb936e0053bb0a1391a2e213daf6dbb946f4bbe` |
+
+- **macOS DMG** (24 MB, was 36 MB): LZMA (`ULMO`) image, macOS 12+, Apple silicon, ad-hoc signed — first launch needs right-click → Open.
+- **iOS IPA** (18 MB): the native Cosmos iOS app (`sh.cosmos.ios`, iOS 26+), unsigned — sideload with Sideloadly/AltStore as in `mobile/SIDELOAD.md`. Woozlit account sign-in, compact transcript mode (More → Settings), and the new model picker with search, favorites and a provider rail. The older Expo companion IPA stays under `mobile/`.
+- **Cloud mode:** the chosen cloud seat, GitHub repository and branch are remembered across restarts.
+- **Windows / Linux:** installers (`Cosmos-Setup-x86_64.exe`, `Cosmos-linux-*.deb` / `.AppImage` / `.tar.gz`) come from the `release` workflow in `PupppyLoverr/cosmos`; they are not in this folder yet.
+
 # Cosmos v0.2.1-alpha refresh — source `1e732c74`
 
 This refresh is built from Cosmos `main` at `1e732c74`.
