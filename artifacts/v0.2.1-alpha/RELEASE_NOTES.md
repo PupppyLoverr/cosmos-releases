@@ -6,11 +6,18 @@ Built from Cosmos `main` at `268bbd1b` (PRs #27–#29).
 | --- | --- |
 | `cosmos-0.2.91-macos-arm64.dmg` | `4437f64a0e28ebf0457193c06368e68142e3a0d6e18cfd3b902e2d8077a52078` |
 | `ios/Cosmos-0.2.91-ios-unsigned.ipa` | `096b09f2d66072d44c220fc63eb936e0053bb0a1391a2e213daf6dbb946f4bbe` |
+| `windows/Cosmos-Setup-x86_64.exe` | `5a70fc685cf5f6ad2c09f046bb59d56497c71fdc20c46f63188f9b941982cb6d` |
+| `windows/cosmos-0.2.91-windows-x86_64.zip` | `202f32a955c77d2325bd42caedd160a687f953cb88bccb06c1c6c40c0265f19e` |
+| `linux/Cosmos-linux-x86_64.deb` | `5eaa0ab43383d299c6589c363d34b397e2a9a26fa0a1c54b6edea49b5815e4db` |
+| `linux/Cosmos-linux-x86_64.AppImage` | `c11005b23aab16085cb15d29a42f2620c894f53df3e63b2f52f7de3d6305bd7d` |
+| `linux/Cosmos-linux-x86_64.tar.gz` | `e2a878f4800c39ea3e380e53e362601c2d5ecdb196697a791ea179a6190c4f96` |
+| `linux/cosmos-0.2.91-linux-x86_64.tar.gz` | `dc4e12efb5507db4227fe6253ddf7586f820f92c9942b58361ee0eb73c13ae03` |
 
 - **macOS DMG** (24 MB, was 36 MB): LZMA (`ULMO`) image, macOS 12+, Apple silicon, ad-hoc signed — first launch needs right-click → Open.
 - **iOS IPA** (18 MB): the native Cosmos iOS app (`sh.cosmos.ios`, iOS 26+), unsigned — sideload with Sideloadly/AltStore as in `mobile/SIDELOAD.md`. Woozlit account sign-in, compact transcript mode (More → Settings), and the new model picker with search, favorites and a provider rail. The older Expo companion IPA stays under `mobile/`.
 - **Cloud mode:** the chosen cloud seat, GitHub repository and branch are remembered across restarts.
-- **Windows / Linux:** installers (`Cosmos-Setup-x86_64.exe`, `Cosmos-linux-*.deb` / `.AppImage` / `.tar.gz`) come from the `release` workflow in `PupppyLoverr/cosmos`; they are not in this folder yet.
+- **Windows** (x86_64, Windows 10/11): `windows/Cosmos-Setup-x86_64.exe` (24 MB) installs per-user with a Start Menu entry and uninstaller; `windows/cosmos-0.2.91-windows-x86_64.zip` (35 MB) is the portable build (`install.cmd` copies it to `%LOCALAPPDATA%\Cosmos\bin` and adds it to PATH). Not code-signed, so Windows SmartScreen may warn on first run (More info → Run anyway).
+- **Linux** (x86_64, glibc 2.35+, e.g. Ubuntu 22.04+ / Debian 12+): `linux/Cosmos-linux-x86_64.deb` (`sudo apt install ./Cosmos-linux-x86_64.deb`), `linux/Cosmos-linux-x86_64.AppImage` (`chmod +x`, needs `libfuse2`), or the `.tar.gz`. aarch64 Linux builds are not included.
 
 # Cosmos v0.2.1-alpha refresh — source `1e732c74`
 
