@@ -144,7 +144,7 @@ The earlier `mobile/Cosmos-0.2.79-ios-unsigned.xcarchive.zip` predates this buil
 
 ## Install (macOS, Apple silicon)
 
-Open the DMG and drag `Cosmos.app` to Applications. The bundle is signed with a local development identity, so the first launch needs right-click → Open (or `xattr -d com.apple.quarantine`).
+Open the DMG and drag `Cosmos.app` to Applications. The bundle uses an ad-hoc signature, so the first launch may require right-click → Open (or `xattr -d com.apple.quarantine`).
 
 Accessibility for Computer Use must be enabled once per Mac in System Settings → Privacy & Security → Accessibility.
 
