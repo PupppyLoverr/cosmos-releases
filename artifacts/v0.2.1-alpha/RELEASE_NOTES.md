@@ -1,3 +1,16 @@
+# Cosmos 0.2.91 rebuild — source `63588940` (PR #34)
+
+| File | SHA-256 |
+| --- | --- |
+| `cosmos-0.2.91-macos-arm64.dmg` | `e94e6429c8fe06d7dc01ae2cb8a2050158ae32d8e5917a238d853d7cbcf40a7c` |
+| `ios/Cosmos-0.2.91-ios-unsigned.ipa` | `cd46eb3e175a6bde9a0acbff99808a027e66f744a987debd9715891202993bba` |
+
+What's new:
+- Diffs tab no longer crashes; macOS sign-in callback falls back to `[::1]`.
+- Cloud rail lifecycle + monochrome Cloud UI.
+
+IPA unsigned, re-sign before installing.
+
 # iOS voice composer preview — source `d2d59873` (cosmos PR #31)
 
 | File | SHA-256 |
