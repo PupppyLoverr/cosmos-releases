@@ -1,3 +1,25 @@
+# Cosmos 0.2.91 rebuild — source `5eb9c9e1` (PR #36 branch)
+
+All desktop builds below come from cosmos `5eb9c9e16acab011f1109039cf76f956be4fe131` (main + PR #36). The iOS IPA is unchanged: no iOS source changed since the previous build.
+
+| File | SHA-256 |
+| --- | --- |
+| `cosmos-0.2.91-macos-arm64.dmg` | `5c22a228c84f3c57a371112a0080d3b5097b54e47a39764ee4d762ea83dff4ca` |
+| `windows/Cosmos-Setup-x86_64.exe` | `67affd67969a460e68154c2669f13540c22c03fbe4fc3ddef31b5fa3d288708c` |
+| `windows/cosmos-0.2.91-windows-x86_64.zip` | `de1a9f2a023028fcdbf0784bac451ddba90e1d9668e1b6f4726d4b2e5592f3d2` |
+| `linux/Cosmos-linux-x86_64.deb` | `f3777be51a3358573e7247b1ce7fc0a793c3f05042d0bbbfaf4fd71f905867ad` |
+| `linux/Cosmos-linux-x86_64.AppImage` | `5956b58d25a9fcf36bd7a1f5f84f0da50dd13fd14dc7dddaf8e7eb281f6049e0` |
+| `linux/Cosmos-linux-x86_64.tar.gz` | `b7c52dd5baf83d3725c5c677cef9d3bb19428c2b65e9a6a8f3b2a783cb4008e9` |
+| `linux/cosmos-0.2.91-linux-x86_64.tar.gz` | `f3b3d6ce996e4f3a06ceb706f080e7f84f9dfcb0d8e78b996a1c39bc92ab06c9` |
+
+What's new:
+- Right-pane tabs: "+" stays pinned and visible when tabs overflow (including Glass themes), and the active tab scrolls into view.
+- Archived chats offer Unarchive.
+- Side chats opened from a Cloud chat stay in Cloud mode on the same seat.
+- Includes the Cloud rail lifecycle / monochrome Cloud UI from PR #34.
+
+macOS DMG is ad-hoc signed (right-click → Open on first launch). Windows builds are not code-signed (SmartScreen: More info → Run anyway).
+
 # Cosmos 0.2.91 rebuild — source `63588940` (PR #34)
 
 | File | SHA-256 |
