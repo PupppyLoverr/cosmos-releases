@@ -1,10 +1,10 @@
-5c22a228c84f3c57a371112a0080d3b5097b54e47a39764ee4d762ea83dff4ca  cosmos-0.2.91-macos-arm64.dmg
+7449c04710ae4154dd2381d98d56c1faf477b1370615c116e0fad5b9b036aed3  cosmos-0.2.91-macos-arm64.dmg
 cd46eb3e175a6bde9a0acbff99808a027e66f744a987debd9715891202993bba  ios/Cosmos-0.2.91-ios-unsigned.ipa
 e36f8baa99de8bedf464d939b30b0e1f2f3eb285f2417ac30777d7af427cdd5b  mobile/Cosmos-0.2.79-ios-unsigned.ipa
-67affd67969a460e68154c2669f13540c22c03fbe4fc3ddef31b5fa3d288708c  windows/Cosmos-Setup-x86_64.exe
-de1a9f2a023028fcdbf0784bac451ddba90e1d9668e1b6f4726d4b2e5592f3d2  windows/cosmos-0.2.91-windows-x86_64.zip
-f3777be51a3358573e7247b1ce7fc0a793c3f05042d0bbbfaf4fd71f905867ad  linux/Cosmos-linux-x86_64.deb
-5956b58d25a9fcf36bd7a1f5f84f0da50dd13fd14dc7dddaf8e7eb281f6049e0  linux/Cosmos-linux-x86_64.AppImage
-b7c52dd5baf83d3725c5c677cef9d3bb19428c2b65e9a6a8f3b2a783cb4008e9  linux/Cosmos-linux-x86_64.tar.gz
-f3b3d6ce996e4f3a06ceb706f080e7f84f9dfcb0d8e78b996a1c39bc92ab06c9  linux/cosmos-0.2.91-linux-x86_64.tar.gz
+8f8ebd7a41e4cd4ab65b62611b464d9a5e05e42fa95bc2780d7493f49d94b0c6  windows/Cosmos-Setup-x86_64.exe
+9dc7ff046a56571821df8713bb71293ba443f8c933590b1de793b5367d8907b6  windows/cosmos-0.2.91-windows-x86_64.zip
+9f7755394163c0b3a8bf6d64cbe7766e8b5177340d48fcdc2475960919b634d1  linux/Cosmos-linux-x86_64.deb
+caef21b34cfb89e1c8a7ba9562605522dcfb89fa40542da966bf245810d17627  linux/Cosmos-linux-x86_64.AppImage
+499bb554f87bdfd5c17d2a8fe445d936986f91af03f5c30d026260276294a0fc  linux/Cosmos-linux-x86_64.tar.gz
+c3d6fa489d3e9629c2b165b5aa30e7b3c445045300667534eedf8304bfbde1dd  linux/cosmos-0.2.91-linux-x86_64.tar.gz
 9e582f3fcbb86f1bf8e36dd8b66bf2b6f696610a7b335939c9fd1ec99d7ee80c  ios/Cosmos-0.2.91-ios-voice-composer-unsigned.ipa

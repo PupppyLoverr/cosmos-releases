@@ -1,3 +1,24 @@
+# Cosmos 0.2.91 rebuild — source `ded74116` (PRs #38, #39)
+
+All desktop builds below come from cosmos `ded74116d35f032ed0d2cc7a5e0054d9c3efdd10` (main with PR #38 + the Windows build fix from PR #39). The iOS IPA is unchanged: no iOS source changed.
+
+| File | SHA-256 |
+| --- | --- |
+| `cosmos-0.2.91-macos-arm64.dmg` | `7449c04710ae4154dd2381d98d56c1faf477b1370615c116e0fad5b9b036aed3` |
+| `windows/Cosmos-Setup-x86_64.exe` | `8f8ebd7a41e4cd4ab65b62611b464d9a5e05e42fa95bc2780d7493f49d94b0c6` |
+| `windows/cosmos-0.2.91-windows-x86_64.zip` | `9dc7ff046a56571821df8713bb71293ba443f8c933590b1de793b5367d8907b6` |
+| `linux/Cosmos-linux-x86_64.deb` | `9f7755394163c0b3a8bf6d64cbe7766e8b5177340d48fcdc2475960919b634d1` |
+| `linux/Cosmos-linux-x86_64.AppImage` | `caef21b34cfb89e1c8a7ba9562605522dcfb89fa40542da966bf245810d17627` |
+| `linux/Cosmos-linux-x86_64.tar.gz` | `499bb554f87bdfd5c17d2a8fe445d936986f91af03f5c30d026260276294a0fc` |
+| `linux/cosmos-0.2.91-linux-x86_64.tar.gz` | `c3d6fa489d3e9629c2b165b5aa30e7b3c445045300667534eedf8304bfbde1dd` |
+
+What's new:
+- Railway free trial: when Railway refuses an anonymous trial, Cosmos now offers "Continue with Railway" (free signup) and starts the trial on its own once you finish, instead of showing "Railway trial — unavailable".
+- Settings → Cloud computer: just Railway (start / continue the free trial) and a Boat token, plus GitHub. "Add any" and the advanced fields are gone. Signed-out profiles see a single "Sign in to use a cloud computer" card.
+- Cloud chats are runner-hosted synced chats (PR #37).
+
+macOS DMG is ad-hoc signed (right-click → Open on first launch). Windows builds are not code-signed (SmartScreen: More info → Run anyway).
+
 # Cosmos 0.2.91 rebuild — source `5eb9c9e1` (PR #36 branch)
 
 All desktop builds below come from cosmos `5eb9c9e16acab011f1109039cf76f956be4fe131` (main + PR #36). The iOS IPA is unchanged: no iOS source changed since the previous build.
