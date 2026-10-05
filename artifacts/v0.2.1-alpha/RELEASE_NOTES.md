@@ -1,3 +1,27 @@
+# Cosmos 0.2.91 rebuild — source `0bc89e45` (PRs #40–#43)
+
+All desktop builds below come from cosmos `0bc89e4512690247f7f2d6c2ffeaff2fe9ecea56` (main at PRs #40–#43; the PR #39 Windows build fix was already in the previous `ded74116` build). The iOS IPAs are unchanged: no iOS source changed.
+
+| File | SHA-256 |
+| --- | --- |
+| `cosmos-0.2.91-macos-arm64.dmg` | `c57af28ca4cc8f5be828d565f95fcb178098a3a9963d894d3e115bd4d72de08d` |
+| `windows/Cosmos-Setup-x86_64.exe` | `aeaec29c91c9e73be13313cccc92f1857979dd7f01d827da85a72d4d7ff979a9` |
+| `windows/cosmos-0.2.91-windows-x86_64.zip` | `07b1a6c99478f4358b845d716d3411f8c0f52f9cfa210ebdf997a2e1d69d47d6` |
+| `linux/Cosmos-linux-x86_64.deb` | `8507a40186b75d0e57bbdd4671e4ecb696497308374a9549350edbb9d4c17243` |
+| `linux/Cosmos-linux-x86_64.AppImage` | `d2263a5a15e4c7990dbfe601a716cda9b26876bf4a25693773817f3d6b11b1b9` |
+| `linux/Cosmos-linux-x86_64.tar.gz` | `aefdfbc113b9ac41c3cc31ac4049113f1aa9d8a1e14bf1a1a205ca89b9710b5a` |
+| `linux/cosmos-0.2.91-linux-x86_64.tar.gz` | `1b82b3933d79ff0cd42ecabc71b483715f3342e0bba6b755f1b47852f881de52` |
+
+What's new:
+
+- **Cloud chats stream exactly like local ones.** A cloud run's transcript is now the same structured view as a local run: reply text streams as markdown, tool calls land as expandable chips (shell, read, edit, task, …) with their inputs, and reasoning and errors get their own blocks — instead of one flat wall of raw agent output. Runs on Boat seats get the same tool chips, reopening or reattaching to a run keeps everything it already streamed, and unknown harnesses fall back to clean line-broken text rather than JSON or control codes.
+- While Railway finishes the sign-up wait, the seat chip reads "Railway trial — finish on Railway" instead of looking stuck on a generic starting state.
+- Railway failures now say what actually went wrong and what to do: your network or VPN blocking SSH port 22, no IPv4 route (the free trial is IPv4-only), or Railway itself busy/refusing — each with a concrete next step (another Wi-Fi or a phone hotspot, or add a Boat token).
+- Boat token entry is clearer about prerequisites ("Sign in to add a Boat token", "Paste your Boat token first") and its validation notes match the rest of the monochrome Cloud UI.
+- Cloud workspace snapshots no longer fail when the remote seat's shell is zsh.
+
+macOS DMG is ad-hoc signed (right-click → Open on first launch). Windows builds are not code-signed (SmartScreen: More info → Run anyway).
+
 # Cosmos 0.2.91 rebuild — source `ded74116` (PRs #38, #39)
 
 All desktop builds below come from cosmos `ded74116d35f032ed0d2cc7a5e0054d9c3efdd10` (main with PR #38 + the Windows build fix from PR #39). The iOS IPA is unchanged: no iOS source changed.
